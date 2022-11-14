@@ -1,5 +1,4 @@
 import React from "react";
-import { v4 as uuid4 } from "uuid";
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { Input, Checkbox } from "@material-tailwind/react";
@@ -10,10 +9,7 @@ const UpdateInsuarance = () => {
   const openModal = () => setIsOpen(true);
   return (
     <React.Fragment>
-      <button
-        onClick={openModal}
-        className="bg-indigo-400/80 rounded-md px-3 h-10"
-      >
+      <button onClick={openModal} className="bg-indigo-400/80 rounded-md px-3 h-10">
         Update Insuarance
       </button>
       <Transition appear show={isOpen} as={Fragment}>
@@ -99,11 +95,7 @@ const UpdateInsuarance = () => {
                         <span>December</span>
                       </div>
                     </div>
-                    <button
-                      type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                      onClick={closeModal}
-                    >
+                    <button type="button" className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2" onClick={closeModal}>
                       Submit
                     </button>
                   </div>
